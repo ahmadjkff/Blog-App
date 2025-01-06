@@ -1,6 +1,6 @@
 // src/Header.jsx
 import React from "react";
-import searchIcon from "../assets/search.png";
+import searchIcon from "../assets/Search.png";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
