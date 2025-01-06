@@ -14,10 +14,10 @@ function Header({ data, setData }) {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-10 flex align-middle justify-between my-auto py-6 sm:px-1 md:px-28">
+    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-10 flex align-middle items-center justify-between my-auto py-6 sm:px-1 md:px-28">
       <Link to="..">
         <img
-          className="w-full sm:max-w-[50px] sm:max-h-[10px] md:max-w-[158px] md:max-h-[36px]"
+          className="max-w-32 sm:max-w-40 md:max-w-56"
           src={logo}
           alt="logo"
         />

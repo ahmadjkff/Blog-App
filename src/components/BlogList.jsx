@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Card from "./Card";
-import { useEffect } from "react";
 
 // Utility function to slugify the subtitle
 const slugify = (text) =>
@@ -11,16 +10,16 @@ const slugify = (text) =>
 
 function BlogList({ data, setSelectedBlog }) {
   const handleCardClick = (blog) => {
-    setSelectedBlog(blog); // Set the selected blog
+    setSelectedBlog(blog);
   };
 
   return (
-    <div className="flex flex-wrap gap-4 mt-24 sm:flex-col sm:items-center md:flex-row">
+    <div className="flex flex-wrap gap-4 mt-24 justify-center sm:flex-col sm:items-center md:flex-row">
       {data.map((item, index) => (
         <Link
           key={index}
-          to={`/blog/${slugify(item?.subtitle)}`} // Use slugified subtitle for the URL
-          onClick={() => handleCardClick(index)} // Set the clicked blog as the selected one}
+          to={`/blog/${slugify(item?.subtitle)}`}
+          onClick={() => handleCardClick(index)}
         >
           <Card data={item} index={index} />
         </Link>
